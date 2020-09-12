@@ -13,12 +13,17 @@ function Home() {
 				/>
 
 				<div className='home__row'>
-					<Product title="The Lean Startup" price='19.99'/>
+					<Product title='The Lean Startup' price='19.99' />
+					<Product title='The Lean Startup' price='19.99' />
 				</div>
-
-				<div className='home__row'></div>
-
-				<div className='home__row'></div>
+				<div className='home__row'>
+					<Product title='The Lean Startup' price='19.99' />
+					<Product title='The Lean Startup' price='19.99' />
+					<Product title='The Lean Startup' price='19.99' />
+				</div>
+				<div className='home__row'>
+					<Product title='The Lean Startup' price='19.99' />
+				</div>
 			</div>
 		</div>
 	);

@@ -12,16 +12,14 @@ function Product({ title, price, stars, image }) {
 				</p>
 				<div className='product__rating'>
 					<p>⭐</p>
-					<p>⭐</p>
-					<p>⭐</p>
-					<p>⭐</p>
 				</div>
-				<img
-					src='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-					alt='product'
-				/>
-				<button>Add to Basket</button>
 			</div>
+			<img
+				className='product__image'
+				src='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
+				alt='product'
+			/>
+			<button className='product__button'>Add to Basket</button>
 		</div>
 	);
 }
