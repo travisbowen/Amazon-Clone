@@ -3,14 +3,14 @@ import "./Product.css";
 import { useStateValue } from "../utils/StateProvider";
 
 function Product({ id, title, price, rating, image }) {
-	const [{ basket }, dispatch] = useStateValue();
+	const [{ cart }, dispatch] = useStateValue();
 
-	console.log("basket", basket);
+	console.log("cart", cart);
 
-	const addToBasket = () => {
+	const addToCart = () => {
 		// Dispatch the item into the data layer
 		dispatch({
-			type: "ADD_TO_BASKET",
+			type: "ADD_TO_CART",
 			item: {
 				id: id,
 				title: title,
@@ -38,8 +38,8 @@ function Product({ id, title, price, rating, image }) {
 				</div>
 			</div>
 			<img className='product__image' src={image} alt='product' />
-			<button className='product__button' onClick={addToBasket}>
-				Add to Basket
+			<button className='product__button' onClick={addToCart}>
+				Add to Cart
 			</button>
 		</div>
 	);
